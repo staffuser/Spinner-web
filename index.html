@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" data-wf-domain="Spinner-web" class = "noselect">
+  <head>
+    <!-- First setting  -->
+    <meta charset="utf-8" />
+    <link rel="icon" href="bitcoin-fidget-spinner.png" />
+
+    <!-- VIEW -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width">
+
+    <meta name="Spinner-web" content="#fff">
+    <title>Spinner-web</title>
+
+    <meta name="color-scheme" content="light dark">
+    <meta name="theme-color" content="#fff">
+    
+
+    <!-- import files -->
+
+    <!-- <link rel="preload" href="style.css" as="style"> -->
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="prefetch" href="script.js" as="script" type="text/javascript">
+
+    
+    <!-- Other -->
+    <!-- NO SELECTECT TEXT! -->
+
+    <meta
+      name="APP"
+      content="Web-create-react-app"
+    />
+  </head>
+
+  <body>
+
+        <script>
+          function myFunction(imgs) {
+              var expandImg = document.getElementById("expandedImg");
+              var imgText = document.getElementById("imgtext");
+              expandImg.src = imgs.src;
+              imgText.innerHTML = imgs.alt;
+              expandImg.parentElement.style.display = "block";
+              document.getElementById('expandedImg').classList.toggle('container');             
+          }
+
+          function Stop() {
+              document.getElementById('expandedImg').classList.remove("container");
+          }
+
+        </script>
+        <div style="text-align:center">
+          <header>
+            <ur>
+              <p1>Author:</p1>
+              <a href="https://github.com/staffuser">@staffuser</a> <a>or</a> <a href="https://gamejolt.com/invite/PixProtogen1">@pixprotogen1</a>
+            </ur>
+            <h2>Сhoose a Spinner</h2>
+            <p>Click on the image you need:</p>
+          </header>
+        </div>
+
+        <!-- The Spinners -->
+        <div class="row">
+
+          <div class="column">
+            <img src="bitcoin-fidget-spinner.png" alt="bitcoin-fidget-spinner" style="width:50px" onclick="myFunction(this);">
+          </div>
+
+          <div class="column">
+            <img src="flex-cat.gif" alt="cat" style="width:50px" onclick="myFunction(this);">
+          </div>
+
+          <div class="column">
+            <img src="kisser.gif" alt="kisser" style="width:50px" onclick="myFunction(this);">
+          </div>
+
+          <div class="column">
+            <img src="3147-shinjimoment.png" alt="shinjimoment" style="width:50px" onclick="myFunction(this);">
+          </div>
+        
+          <div class="column">
+            <img src="gamepad.jpg" alt="gamepad" style="width:50px" onclick="myFunction(this);">
+          </div>
+
+          <div class="column">
+            <img src="dehyasips.png" alt="dehyasips" style="width:50px" onclick="myFunction(this);">
+          </div>
+
+          <div class="column">
+            <img src="artwork.gif" alt="artwork" style="width:50px" onclick="myFunction(this);">
+          </div>
+
+          <div class="column">
+            <img src="kannawow.png" alt="kannawow" style="width:50px" onclick="myFunction(this);">
+          </div>
+
+          <div class="column">
+            <img src="paimonooo2.png" alt="paimonooo" style="width:50px" onclick="myFunction(this);">
+          </div>
+
+          <div class="column">
+            <img src="sleepy-time.png" alt="sleepy" style="width:50px" onclick="myFunction(this);">
+          </div>
+
+          <div class="column">
+            <img src="spookycatgirl.png" alt="spookycat" style="width:50px" onclick="myFunction(this);">
+          </div>
+
+          <div class="column">
+            <img src="speedrunner.gif" alt="speedrunner" style="width:50px" onclick="myFunction(this);">
+          </div>
+
+          <div class="column">
+            <img src="wait.gif" alt="wait" style="width:50px" onclick="myFunction(this);">
+          </div>
+
+      </div>
+      <br>
+      <!-- Round -->
+      <br>
+      <div class="column" style="text-align:center">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">×</span>
+        <img id="expandedImg" style="width: 180px">
+        <div id="imgtext"></div>
+      </div>
+      <br>
+      <!-- BTN Stop -->
+      <div>
+        <noscript>
+          <h1>Enable JavaScript to run this APP.</h1>
+          <button type="submit" onclick="locationreload();" class="btn btn-success">Stop</button>
+        </noscript>
+        
+        <input type="submit" value="Stop" style="width:150px" form="hidden_form" onclick="Stop();">
+        
+      </div>
+    </body>
+</html>
